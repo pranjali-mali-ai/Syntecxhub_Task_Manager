@@ -1,6 +1,8 @@
 # 📝 Task Manager App
 
-A full-stack Task Manager application built using the MERN stack that helps users organize and manage their daily tasks efficiently. Users can securely register, log in, and perform complete CRUD operations on their tasks.
+A modern full-stack Task Manager application built using the MERN Stack. The application allows users to securely manage daily tasks with authentication, task categorization, analytics, search, filtering, sorting, and a Kanban board for improved productivity.
+
+---
 
 ## 🚀 Features
 
@@ -9,43 +11,69 @@ A full-stack Task Manager application built using the MERN stack that helps user
 - User Login
 - JWT Authentication
 - Protected Routes
-- Secure Password Hashing using bcrypt
+- Secure Password Hashing using bcryptjs
 
 ### 📋 Task Management
 - Create Tasks
-- View All Tasks
+- View Tasks
 - Update Tasks
 - Delete Tasks
-- Task Ownership Protection (Users can access only their own tasks)
+- User-specific Task Management
+- Task Status (To Do, In Progress, Completed)
+- Task Priority (Low, Medium, High)
+- Due Date Management
 
-### 🎨 Frontend
-- Responsive React UI
-- Dashboard
-- Task Cards
-- Add/Edit Task Modal
-- Navbar
-- User-friendly Interface
+### 📊 Dashboard
+- Personalized Welcome Dashboard
+- Total Tasks
+- To Do Tasks
+- In Progress Tasks
+- Completed Tasks
+- Quick Statistics Cards
 
-### 🛠 Backend
-- RESTful APIs
-- Express.js
-- MongoDB with Mongoose
-- JWT Authentication
-- Global Error Handling
-- CORS Configuration
+### 📈 Analytics
+- Task Completion Analytics
+- Priority Distribution
+- Interactive Charts
+
+### 📌 Kanban Board
+- Drag and Drop Tasks
+- Three Columns:
+  - To Do
+  - In Progress
+  - Completed
+
+### 🔍 Search, Filter & Sort
+- Search Tasks
+- Filter by Status
+- Filter by Priority
+- Sort by Due Date
+- Sort by Priority
+- Sort Alphabetically
+
+### 🎨 User Interface
+- Responsive Design
+- Modern Dashboard
+- Beautiful Cards
+- Task Modal
+- Confirmation Dialog
+- Loading Skeleton
+- Mobile Friendly
 
 ---
 
-## 🏗 Tech Stack
+# 🛠 Tech Stack
 
-### Frontend
-- React.js (Vite)
+## Frontend
+- React.js
+- Vite
 - Tailwind CSS
 - React Router DOM
 - Axios
-- React Icons
+- Context API
+- Recharts
 
-### Backend
+## Backend
 - Node.js
 - Express.js
 - MongoDB
@@ -54,12 +82,13 @@ A full-stack Task Manager application built using the MERN stack that helps user
 - bcryptjs
 - dotenv
 - CORS
+- Express Validator
 
 ---
 
-## 📂 Project Structure
+# 📂 Folder Structure
 
-```text
+```
 Task Manager/
 │
 ├── backend/
@@ -73,14 +102,15 @@ Task Manager/
 │   └── package.json
 │
 ├── frontend/
+│   ├── public/
 │   ├── src/
-│   │   ├── assets/
 │   │   ├── components/
 │   │   ├── context/
 │   │   ├── pages/
 │   │   ├── services/
 │   │   ├── App.jsx
-│   │   └── main.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
 │   └── package.json
 │
 └── README.md
@@ -88,9 +118,9 @@ Task Manager/
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
-### Clone the Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/pranjali-mali-ai/Syntecxhub_Task_Manager.git
@@ -102,7 +132,7 @@ cd Syntecxhub_Task_Manager
 
 ---
 
-### Backend Setup
+## Backend Setup
 
 ```bash
 cd backend
@@ -116,7 +146,7 @@ PORT=5000
 MONGO_URI=mongodb://localhost:27017/taskmanager
 ```
 
-Start the backend:
+Start the backend
 
 ```bash
 npm run dev
@@ -124,7 +154,7 @@ npm run dev
 
 ---
 
-### Frontend Setup
+## Frontend Setup
 
 ```bash
 cd frontend
@@ -132,18 +162,21 @@ npm install
 npm run dev
 ```
 
----
-
-## 👩‍💻 Author
+# 👩‍💻 Author
 
 **Pranjali Mali**
 
-GitHub: https://github.com/pranjali-mali-ai
+- GitHub: https://github.com/pranjali-mali-ai
+- LinkedIn: https://www.linkedin.com/in/pranjali-mali-ai/
 
-LinkedIn: https://www.linkedin.com/in/pranjali-mali-ai/
+---
+
+# ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
 
 ---
 
 ## 📄 License
 
-This project is created for learning, internship, and portfolio purposes.
+This project was developed for learning, internship, and portfolio purposes.
